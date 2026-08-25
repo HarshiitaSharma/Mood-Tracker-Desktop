@@ -79,6 +79,3 @@ Build output lands in `out/` (Electron Forge default) — this is what produces 
 - **`nodeIntegration: true` / `contextIsolation: false`:** convenient for reading local files directly from the renderer, but it's an Electron anti-pattern from a security standpoint if you ever load any remote or untrusted content. Fine for a fully local app like this, but worth keeping in mind if the app grows.
 - Don't commit `node_modules/` or the `out/`/packaged build folder to git — add them to `.gitignore`.
 
-## License
-
-ISC (per `package.json`) — update as needed before publishing.
