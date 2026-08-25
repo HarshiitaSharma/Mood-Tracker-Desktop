@@ -1,0 +1,37 @@
+{
+  "name": "mood-tracker-desktop",
+  "version": "1.0.0",
+  "description": "A desktop app for tracking mood and well-being",
+  "main": "electron.js",
+  "scripts": {
+    "start": "electron .",
+    "package": "electron-forge package",
+    "make": "electron-forge make"
+  },
+  "author": "Harshita",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^38.0.0",
+    "@electron-forge/cli": "^6.0.0",
+    "@electron-forge/maker-squirrel": "^6.0.0",
+    "@electron-forge/maker-zip": "^6.0.0",
+    "@electron-forge/maker-deb": "^6.0.0",
+    "@electron-forge/maker-rpm": "^6.0.0"
+  },
+  "config": {
+    "forge": {
+      "makers": [
+        {
+          "name": "@electron-forge/maker-squirrel",
+          "config": {
+            "name": "mood_tracker_desktop"
+          }
+        },
+        {
+          "name": "@electron-forge/maker-zip",
+          "platforms": ["win32"]
+        }
+      ]
+    }
+  }
+}
