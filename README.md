@@ -81,16 +81,18 @@ mood-tracker-desktop/
 │   └── diary-entry.jpeg         # Diary entry interface
 │
 └── src/
-    ├── index_new.html           # Main application window
-    ├── script.js                # Application logic
-    ├── mood-rules.xml           # XML personalization rules
-    ├── base.css                 # Reset, utilities, and shared animations
-    ├── theme.css                # Light/dark theme variables and styling
-    ├── components_new.css       # Component-level styles
-    ├── style.css                # Additional styling and transitions
-    ├── calming-music.mp3        # Calming background audio
-    ├── meditation.mp3           # Meditation background audio
-    └── nature-sounds.mp3        # Nature sounds background audio
+│    ├── index_new.html           # Main application window
+│    ├── script.js                # Application logic
+│    ├── mood-rules.xml           # XML personalization rules
+│    ├── base.css                 # Reset, utilities, and shared animations
+│    ├── theme.css                # Light/dark theme variables and styling
+│    ├── components_new.css       # Component-level styles
+│    ├── style.css                # Additional styling and transitions
+│    ├── calming-music.mp3        # Calming background audio
+│    ├── meditation.mp3           # Meditation background audio
+│    └── nature-sounds.mp3        # Nature sounds background audio
+├── demo/
+│   └── mood-tracker-demo.mp4
 ```
 
 ## Installation & Usage
@@ -202,3 +204,5 @@ Accessibility has been considered throughout the interface, including:
 
 Generated Electron Forge artifacts are stored in `out/`. 
 
+## Demo
+!Video Demo(screenshots/DEMO.mp4)
