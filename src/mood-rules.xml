@@ -1,0 +1,527 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RuleML xmlns="http://ruleml.org/spec">
+
+  <!-- ================= MOOD ================= -->
+  <Rule>
+    <if>
+      <Atom>
+        <Rel>mood</Rel>
+        <Var>happy</Var>
+      </Atom>
+    </if>
+    <then>
+      <Atom>
+        <Rel>tip</Rel>
+        <Ind>Enjoy your good mood — spread positivity to others too!</Ind>
+      </Atom>
+    </then>
+  </Rule>
+
+  <Rule>
+    <if>
+      <Atom>
+        <Rel>mood</Rel>
+        <Var>sad</Var>
+      </Atom>
+    </if>
+    <then>
+      <Atom>
+        <Rel>tip</Rel>
+        <Ind>Do something comforting like music, journaling, or calling a friend.</Ind>
+      </Atom>
+    </then>
+  </Rule>
+
+  <Rule>
+    <if>
+      <Atom>
+        <Rel>mood</Rel>
+        <Var>anxious</Var>
+      </Atom>
+    </if>
+    <then>
+      <Atom>
+        <Rel>tip</Rel>
+        <Ind>Try grounding techniques such as deep breathing or writing your worries down.</Ind>
+      </Atom>
+    </then>
+  </Rule>
+
+  <Rule>
+    <if>
+      <Atom>
+        <Rel>mood</Rel>
+        <Var>angry</Var>
+      </Atom>
+    </if>
+    <then>
+      <Atom>
+        <Rel>tip</Rel>
+        <Ind>Release the tension with exercise or creative outlets like drawing or music.</Ind>
+      </Atom>
+    </then>
+  </Rule>
+
+  <Rule>
+    <if>
+      <Atom>
+        <Rel>mood</Rel>
+        <Var>calm</Var>
+      </Atom>
+    </if>
+    <then>
+      <Atom>
+        <Rel>tip</Rel>
+        <Ind>Keep nurturing this calm state with mindfulness or light reading.</Ind>
+      </Atom>
+    </then>
+  </Rule>
+
+  <!-- ================= BALANCE ================= -->
+  <Rule>
+    <if>
+      <Atom>
+        <Rel>balance</Rel>
+        <Var>balanced</Var>
+      </Atom>
+    </if>
+    <then>
+      <Atom>
+        <Rel>tip</Rel>
+        <Ind>Great job staying centered — keep doing what supports your balance.</Ind>
+      </Atom>
+    </then>
+  </Rule>
+
+  <Rule>
+    <if>
+      <Atom>
+        <Rel>balance</Rel>
+        <Var>okay</Var>
+      </Atom>
+    </if>
+    <then>
+      <Atom>
+        <Rel>tip</Rel>
+        <Ind>Mixed days are normal. Reflect on what helped you stay steady today.</Ind>
+      </Atom>
+    </then>
+  </Rule>
+
+  <Rule>
+    <if>
+      <Atom>
+        <Rel>balance</Rel>
+        <Var>chaotic</Var>
+      </Atom>
+    </if>
+    <then>
+      <Atom>
+        <Rel>tip</Rel>
+        <Ind>Journaling or meditation can help organize overwhelming emotions.</Ind>
+      </Atom>
+    </then>
+  </Rule>
+
+  <!-- ================= SLEEP ================= -->
+  <Rule>
+    <if>
+      <Atom>
+        <Rel>sleep</Rel>
+        <Var>great</Var>
+      </Atom>
+    </if>
+    <then>
+      <Atom>
+        <Rel>tip</Rel>
+        <Ind>Awesome! Rest is a superpower — keep protecting your sleep time.</Ind>
+      </Atom>
+    </then>
+  </Rule>
+
+  <Rule>
+    <if>
+      <Atom>
+        <Rel>sleep</Rel>
+        <Var>okay</Var>
+      </Atom>
+    </if>
+    <then>
+      <Atom>
+        <Rel>tip</Rel>
+        <Ind>A little more rest might give you extra focus and energy.</Ind>
+      </Atom>
+    </then>
+  </Rule>
+
+  <Rule>
+    <if>
+      <Atom>
+        <Rel>sleep</Rel>
+        <Var>poor</Var>
+      </Atom>
+    </if>
+    <then>
+      <Atom>
+        <Rel>tip</Rel>
+        <Ind>Try setting a consistent bedtime routine and avoid screens before sleep.</Ind>
+      </Atom>
+    </then>
+  </Rule>
+
+  <!-- ================= STRESS ================= -->
+  <Rule>
+    <if>
+      <Atom>
+        <Rel>stress</Rel>
+        <Var>low</Var>
+      </Atom>
+    </if>
+    <then>
+      <Atom>
+        <Rel>tip</Rel>
+        <Ind>Nice! Keep journaling or exercising to maintain low stress.</Ind>
+      </Atom>
+    </then>
+  </Rule>
+
+  <Rule>
+    <if>
+      <Atom>
+        <Rel>stress</Rel>
+        <Var>medium</Var>
+      </Atom>
+    </if>
+    <then>
+      <Atom>
+        <Rel>tip</Rel>
+        <Ind>Try stretching or taking a short walk to refresh.</Ind>
+      </Atom>
+    </then>
+  </Rule>
+
+  <Rule>
+    <if>
+      <Atom>
+        <Rel>stress</Rel>
+        <Var>high</Var>
+      </Atom>
+    </if>
+    <then>
+      <Atom>
+        <Rel>tip</Rel>
+        <Ind>Practice breathing exercises or short meditation to calm your mind.</Ind>
+      </Atom>
+    </then>
+  </Rule>
+
+  <!-- ================= SOCIAL ================= -->
+  <Rule>
+    <if>
+      <Atom>
+        <Rel>social</Rel>
+        <Var>yes</Var>
+      </Atom>
+    </if>
+    <then>
+      <Atom>
+        <Rel>tip</Rel>
+        <Ind>Social bonds are powerful — keep them strong!</Ind>
+      </Atom>
+    </then>
+  </Rule>
+
+  <Rule>
+    <if>
+      <Atom>
+        <Rel>social</Rel>
+        <Var>no</Var>
+      </Atom>
+    </if>
+    <then>
+      <Atom>
+        <Rel>tip</Rel>
+        <Ind>Even a quick call or message can uplift your mood.</Ind>
+      </Atom>
+    </then>
+  </Rule>
+
+  <!-- ================= ENERGY ================= -->
+  <Rule>
+    <if>
+      <Atom>
+        <Rel>energy</Rel>
+        <Var>high</Var>
+      </Atom>
+    </if>
+    <then>
+      <Atom>
+        <Rel>tip</Rel>
+        <Ind>Channel this energy into something productive or fun!</Ind>
+      </Atom>
+    </then>
+  </Rule>
+
+  <Rule>
+    <if>
+      <Atom>
+        <Rel>energy</Rel>
+        <Var>medium</Var>
+      </Atom>
+    </if>
+    <then>
+      <Atom>
+        <Rel>tip</Rel>
+        <Ind>Keep a steady pace and don’t forget short breaks.</Ind>
+      </Atom>
+    </then>
+  </Rule>
+
+  <Rule>
+    <if>
+      <Atom>
+        <Rel>energy</Rel>
+        <Var>low</Var>
+      </Atom>
+    </if>
+    <then>
+      <Atom>
+        <Rel>tip</Rel>
+        <Ind>Take a brisk walk or drink water — dehydration often lowers energy.</Ind>
+      </Atom>
+    </then>
+  </Rule>
+
+  <!-- ================= FOCUS ================= -->
+  <Rule>
+    <if>
+      <Atom>
+        <Rel>focus</Rel>
+        <Var>focused</Var>
+      </Atom>
+    </if>
+    <then>
+      <Atom>
+        <Rel>tip</Rel>
+        <Ind>Great concentration — protect it by reducing distractions.</Ind>
+      </Atom>
+    </then>
+  </Rule>
+
+  <Rule>
+    <if>
+      <Atom>
+        <Rel>focus</Rel>
+        <Var>somewhat</Var>
+      </Atom>
+    </if>
+    <then>
+      <Atom>
+        <Rel>tip</Rel>
+        <Ind>Break tasks into smaller steps to improve focus.</Ind>
+      </Atom>
+    </then>
+  </Rule>
+
+  <Rule>
+    <if>
+      <Atom>
+        <Rel>focus</Rel>
+        <Var>distracted</Var>
+      </Atom>
+    </if>
+    <then>
+      <Atom>
+        <Rel>tip</Rel>
+        <Ind>Try the Pomodoro technique: 25 mins focused work + 5 mins break.</Ind>
+      </Atom>
+    </then>
+  </Rule>
+
+  <!-- ================= APPETITE ================= -->
+  <Rule>
+    <if>
+      <Atom>
+        <Rel>appetite</Rel>
+        <Var>normal</Var>
+      </Atom>
+    </if>
+    <then>
+      <Atom>
+        <Rel>tip</Rel>
+        <Ind>Good! Maintain healthy, balanced meals.</Ind>
+      </Atom>
+    </then>
+  </Rule>
+
+  <Rule>
+    <if>
+      <Atom>
+        <Rel>appetite</Rel>
+        <Var>less</Var>
+      </Atom>
+    </if>
+    <then>
+      <Atom>
+        <Rel>tip</Rel>
+        <Ind>Eat smaller, frequent snacks rich in protein and fiber.</Ind>
+      </Atom>
+    </then>
+  </Rule>
+
+  <Rule>
+    <if>
+      <Atom>
+        <Rel>appetite</Rel>
+        <Var>more</Var>
+      </Atom>
+    </if>
+    <then>
+      <Atom>
+        <Rel>tip</Rel>
+        <Ind>Keep healthy snacks around to avoid overeating junk food.</Ind>
+      </Atom>
+    </then>
+  </Rule>
+
+  <!-- ================= EXERCISE ================= -->
+  <Rule>
+    <if>
+      <Atom>
+        <Rel>exercise</Rel>
+        <Var>yes</Var>
+      </Atom>
+    </if>
+    <then>
+      <Atom>
+        <Rel>tip</Rel>
+        <Ind>Nice! Physical activity keeps mood and body strong.</Ind>
+      </Atom>
+    </then>
+  </Rule>
+
+  <Rule>
+    <if>
+      <Atom>
+        <Rel>exercise</Rel>
+        <Var>no</Var>
+      </Atom>
+    </if>
+    <then>
+      <Atom>
+        <Rel>tip</Rel>
+        <Ind>Even 10 minutes of stretching or walking counts as exercise.</Ind>
+      </Atom>
+    </then>
+  </Rule>
+
+  <!-- ================= OUTDOORS ================= -->
+  <Rule>
+    <if>
+      <Atom>
+        <Rel>outdoors</Rel>
+        <Var>yes</Var>
+      </Atom>
+    </if>
+    <then>
+      <Atom>
+        <Rel>tip</Rel>
+        <Ind>Fresh air and sunlight are mood boosters — great choice!</Ind>
+      </Atom>
+    </then>
+  </Rule>
+
+  <Rule>
+    <if>
+      <Atom>
+        <Rel>outdoors</Rel>
+        <Var>no</Var>
+      </Atom>
+    </if>
+    <then>
+      <Atom>
+        <Rel>tip</Rel>
+        <Ind>Step outside for even 10 minutes — sunlight boosts mood instantly.</Ind>
+      </Atom>
+    </then>
+  </Rule>
+
+  <!-- ================= MOTIVATION ================= -->
+  <Rule>
+    <if>
+      <Atom>
+        <Rel>mood</Rel>
+        <Var>happy</Var>
+      </Atom>
+    </if>
+    <then>
+      <Atom>
+        <Rel>motivation</Rel>
+        <Ind>Keep spreading your positive energy today!</Ind>
+      </Atom>
+    </then>
+  </Rule>
+
+  <Rule>
+    <if>
+      <Atom>
+        <Rel>stress</Rel>
+        <Var>high</Var>
+      </Atom>
+    </if>
+    <then>
+      <Atom>
+        <Rel>motivation</Rel>
+        <Ind>Take a deep breath, you’ve got this!</Ind>
+      </Atom>
+    </then>
+  </Rule>
+
+  <!-- ================= DIARY PROMPTS ================= -->
+  <Rule>
+    <if>
+      <Atom>
+        <Rel>mood</Rel>
+        <Var>anxious</Var>
+      </Atom>
+    </if>
+    <then>
+      <Atom>
+        <Rel>diaryPrompt</Rel>
+        <Ind>Write down what is causing your anxiety and one small step to ease it.</Ind>
+      </Atom>
+    </then>
+  </Rule>
+
+  <Rule>
+    <if>
+      <Atom>
+        <Rel>mood</Rel>
+        <Var>happy</Var>
+      </Atom>
+    </if>
+    <then>
+      <Atom>
+        <Rel>diaryPrompt</Rel>
+        <Ind>Describe what made you happy today and how you can repeat it tomorrow.</Ind>
+      </Atom>
+    </then>
+  </Rule>
+
+  <!-- ================= AUDIO SETTINGS ================= -->
+  <Rule>
+    <if>
+      <Atom>
+        <Rel>settings</Rel>
+        <Var>audioEnabled</Var>
+      </Atom>
+    </if>
+    <then>
+      <Atom>
+        <Rel>tipAudio</Rel>
+        <Ind>playSound</Ind>
+      </Atom>
+    </then>
+  </Rule>
+
+</RuleML>

@@ -1,0 +1,10 @@
+/* ========================= ANIMATED BACKGROUND TRANSITION ========================= */
+@keyframes backgroundTransition {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+body.dark-mode {
+  animation: backgroundTransition 0.8s ease-in-out;
+}
